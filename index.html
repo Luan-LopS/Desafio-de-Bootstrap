@@ -9,52 +9,101 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <!--------LINK CSS--------->
   <style>
-    header {
+    header,footer {
       background-color: gray;
       width: 100%;
+      padding: 10px;
     }
   </style>
   <title>Desafio de Bootstrap</title>
 </head>
 
-<body>
-  <header>
-    <div class="container">
-      <div class="row">
-        <div class="col-8">
-          <h1>Desafio</h1>
+<body class="bg-dark-subtle">
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col d-flex justify-content-between align-items-center">
+                    <h1 class="h1 fw-bold">Desafio</h1>
+                    <div class="dropdown">
+                        <button class=" btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Menu   
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="#">Produtos</a></li>
+                            <li><a class="dropdown-item" href="#">Cadastro</a></li>
+                            <li><a class="dropdown-item" href="#">Carrinho</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-4">
-          <nav>
-            <ul class="d-flex justify-content-between align-items-center">
-              <li class="list-unstyled">Produtos</li>
-              <li class=" list-unstyled">Cadastro</li>
-              <li class=" list-unstyled">Carrinho</li>
-            </ul>
-          </nav>
+    </header>
+
+    <section class="mt-5">
+        <div class="container">
+          <div class="row">
+            <div class="col"></div>
+            <div class="col-8">
+                    <h2 class="fw-semibold">Cadastre</h2>
+                    <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat adipisci 
+                    molestiae recusandae accusamus qui aliquid possimus quia, a quisquam corrupti 
+                    deserunt voluptas dolores sint corporis consequuntur dolor hic, exercitationem 
+                    eius illum libero. Iste at aspernatur mollitia aut totam hic aliquid soluta 
+                    distinctio error velit. Rerum nihil saepe distinctio accusamus aliquid?
+                    </p>
+                    <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ullam dicta
+                     ipsam voluptas consequuntur in, earum odio nisi quia asperiores quis cupiditate, 
+                     eveniet dolores exercitationem, beatae quibusdam velit id facilis blanditiis! Quo 
+                     laboriosam totam sunt animi excepturi optio officia vitae nihil magnam ducimus 
+                     odio molestias pariatur rem repellat earum, aliquid tempore soluta consectetur 
+                     perspiciatis eius dolores illo, officiis laborum assumenda.
+                    </p>
+                </div>
+            <div class="col"></div>
+
+          </div>
         </div>
-      </div>
-    </div>
-  </header>
+    </section>   
+
   <section class="mt-5">
     <div class="container">
       <div class="row">
-        <div class="col">
+        <div class="col"></div>
+        <div class="col-8">
           <form>
+            <br>
             <label class="form-label" for="nome">Nome:</label>
             <input class="form-control" type="text" id="nome" name="nome">
-
-            <label class="form-label" for="nome">Email:</label>
+            <br>
+            <label class="form-label" for="email">Email:</label>
             <input class="form-control" type="email" id="email" name="email">
-
+            <br>
             <label class="form-label" for="fone">Telefone:</label>
             <input class="form-control" type="tel" id="fone" name="fone">
+            <br>
+            <div class="d-grid gap-2">
+                <button class="btn btn-outline-success" type="button">Enviar</button>
+            </div>
+
           </form>
         </div>
+        <div class="col"></div>
       </div>
     </div>
   </section>
+    <br>
 
+  <footer class="position-absolute bottom-0" >
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <p>Desenvolvido por Luan Lopes de Siqueira</p>
+            </div>
+        </div>
+    </div>
+  </footer>
 
 
 
